@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html>
+<head> <!-- Look up google fonts, Trust me bro-->
+
+
+	<title>Kwaku's Homepage</title>
+
+
+	<link rel= "stylesheet"  
+
+	href="https://fonts.googleapis.com/css?family=Josefin Sans">
+
+	<!-- Style Sheet -->
+
+	<style type="text/css">
+x
+
+		body{
+			
+			height: 100%;
+			width: 100%;
+			max-width: absolute;
+			margin: auto;
+			
+		}
+
+
+		
+		p{
+			text-align: left;
+			font-size: 25px;
+			font-family: Josefin Sans;
+			color: white;
+		
+		}
+
+         
+
+         /*Background boxes that hold Summary and Key Courses*/
+		.mydiv{
+			
+			border-radius: 15px 50px;
+			background: rgba(93, 93, 93, 0.5); ;
+			padding: 30px;
+			width: 40%;
+			height: 800%;
+			opacity: 100%;
+			margin-left: auto;
+			margin-right: auto;	
+		}
+
+
+		.mydiv2{
+			
+			border-radius: 15px 50px;
+			background: rgba(93, 93, 93, 0.5); ;
+			padding: 20px;
+			width: 80%;
+			height: 6000%;
+			opacity: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		
+		}
+
+
+		/*Background specs for title information.*/
+		.hero-image {
+			  background: url('https://wallpapercave.com/wp/wp8742118.jpg') no-repeat center; 
+			  background-size: cover;
+			  height: 450px;
+			  position: relative;
+			}
+
+
+		/*Background specs for Summary section*/
+		.hero-image2 {
+			  background: url('https://coolbackgrounds.io/images/backgrounds/index/gulf-dec0ccde.svg') no-repeat center; 
+			  background-size: 7000px 5000px;
+			  height: 720px;
+			  position: relative;
+
+			}
+
+
+		/*Background specs for Project Cards section*/
+		.hero-image3 {
+			  background: url('https://coolbackgrounds.io/images/backgrounds/index/gulf-dec0ccde.svg') no-repeat center; 
+			  background-size: 7000px 5000px;
+			  height: 2000px;
+			  position: relative;
+
+			}
+
+
+		/*Background specs for Key Courses section*/
+		.hero-image4 {
+			  background: url('https://coolbackgrounds.io/images/backgrounds/index/gulf-dec0ccde.svg') no-repeat center; 
+			  background-size: 7000px 5000px;
+			  height: 1050px;
+			  position: relative;
+
+			}
+
+
+			/*Text specs for hero classes 1-3*/
+			.hero-text {
+			  text-align: center;
+			  position: relative;
+			  top: 40%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  color: white;
+			}
+
+			/*Text specs for hero class 4*/
+			.hero-text4 {
+			  text-align: left;
+			  position: relative;
+			  top: 40%;
+			  left: 50%;
+			  transform: translate(-50%, -50%);
+			  color: white;
+			}
+
+
+
+
+			/*Flash card specs for Project section*/
+				.flip-card {
+
+				  
+				  background-color: transparent;
+				  width: 250px;
+				  height: 250px;
+				  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+				}
+
+
+				/* This container is needed to position the front and back side */
+				.flip-card-inner {
+				  position: relative;
+				  width: 150%;
+				  height: 150%;
+				  text-align: center;
+				  transition: transform 0.8s;
+				  transform-style: preserve-3d;
+				}
+
+
+				/* Do an horizontal flip when you move the mouse over the flip box container */
+				.flip-card:hover .flip-card-inner {
+				  transform: rotateY(180deg);
+				}
+
+
+				/* Position the front and back side */
+				.flip-card-front, .flip-card-back {
+				  position: absolute;
+				  width: 100%;
+				  height: 100%;
+				  -webkit-backface-visibility: hidden; /* Safari */
+				  backface-visibility: hidden;
+				}
+
+
+				/* Style the front side */
+				.flip-card-front {
+				  background-color: #1357a6;
+				  color: black;
+
+				}
+
+
+				/* Style the back side */
+				.flip-card-back {
+				  background-color: dodgerblue;
+				  color: white;
+				  transform: rotateY(180deg);
+				}
+
+
+
+
+
+</style> 
+
+
+
+<!-- Plugins -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+<!-- jQuery first -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+<!-- Then Popper.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+
+<!-- Then Bootstrap JS -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+
+</head>
+
+
+
+
+<body>
+
+	<!-- Title Name -->
+		<div class="hero-image">
+		  <div class="hero-text">
+		  	<br><br><br>
+		    <h1 style="font-size:50px">Kwaku Amankwaa</h1>
+		    <h3>Aspiring Data Analyst</h3>
+		    <h4>20kamankwaa@gmail.com / 908-590-2447</h4>
+		  </div>
+		</div>
+
+
+		<!--Summary Section -->
+	<div class="hero-image2">
+		  <div class="hero-text">
+		  	<div class="mydiv">
+				<h2 style="color: white;">Summary</h2>
+				<p style="color: white; text-align: center;">
+
+					Motivated undergraduate seeking a position as a Data Analyst/Database Administrator that will allow me to utilize my critical thinking and analytical skills in order to gain hands-on experience. Through the various different courses and Projects assigned to me, I have become proficient in programming languages such as Java, HTML, MySQL. Through the use of MySQL, I have developed databases in order to hold student login information. I have also overlooked many of the projects listed below as a Quality Manager.
+				</p>
+				</div>
+		  </div>
+	</div>
+
+
+		
+
+		<!-- Projects Section-->
+		<div class="hero-image3">
+		  <div class="hero-text">
+		  	<br><br><br><br><br><br><br><br><br><br><br>
+		  	<br><br><br><br><br><br><br><br><br>
+		  	<br><br><br><br><br><br><br><br><br>
+
+
+		    <h1 style="font-size:50px">Projects</h1><br><br>
+
+
+
+		 <!-- Movie Filter Card -->
+
+	<div class="flip-card" style="margin-left: 1050px; margin-right: auto;">
+		  <div class="flip-card-inner">
+
+		    <div class="flip-card-front">
+		      <p style="font-size: 20px; text-align: center;">Movie Filter</p>
+		    </div>
+
+		    <div class="flip-card-back">
+		      <h1><a href="https://github.com/KwakuAmankwaa/Movie_Filter" target= "_blank">Movie Filter</a></h1>
+		     
+		      <p style="font-size: 20px; text-align: center;">Implemented Heap, Priority Queues, and Comparators in order to get the highest rated movie, most viewed movie , and the latest movie seen by students. Data was collected from students on campus.</p>
+		    </div>
+
+		  </div>
+		</div>
+
+
+
+		<!-- Customer Account Sorter Card -->
+
+	<div class="flip-card"  style=" position: relative; left: 500px; bottom: 250px; " >
+
+		  <div class="flip-card-inner">
+		    <div class="flip-card-front">
+
+		      <p style="font-size: 20px; text-align: center;">Customer Account Sorter</p>
+
+		    </div>
+
+		    <div class="flip-card-back">
+		      <h1>Customer Account Sorter </h1>
+		      <p style="font-size: 20px; text-align: center;">Designed a program that reads from a file listed with customer information such as name, email, tax amount, and the tax exemption and organizes the information based on their listed number and then by the first letter of their names.</p>
+		      <p></p>
+		    </div>
+		  </div>
+		</div>
+
+
+
+
+		 <!-- Linux Directory Tree Card -->
+
+	<div class="flip-card" style="margin-left: 1050px; margin-right: auto;">
+		  <div class="flip-card-inner">
+			<div class="flip-card-front">
+		      <p style="font-size: 20px; text-align: center;">Linux Directory Tree and Backup</p>
+		    </div>
+
+		    <div class="flip-card-back">
+		      <h1>Linux Directory Tree and Backup</h1>
+		      <p></p>
+		      <p style="font-size: 20px; text-align: center;">Created a Virtual Machine with Ubuntu 20.04 and revised over basic Linux concepts such as directory and file creation, reviewing commands such as the move, copy and delete command, and assembled a menu with Bash scripting.</p>
+		    </div>
+
+		  </div>
+	</div>
+
+
+		 <!-- Administrator / Student Login Database -->
+	<div class="flip-card"  style=" position: relative; left: 500px; bottom: 250px; " >
+		<div class="flip-card-inner">
+		    <div class="flip-card-front">
+
+		      <p style="font-size: 20px; text-align: center;">Administrator Login Database</p>
+
+		    </div>
+
+		    <div class="flip-card-back">
+		      <h1><a href="https://github.com/KwakuAmankwaa/Database_Project" target="_blank">Administrator Login Database</a></h1>
+		      <p style="font-size: 20px; text-align: center;">Designed a program that reads from a file listed with customer information such as name, email, tax amount, and the tax exemption and organizes the information based on their listed number and then by the first letter of their names.</p>
+		      
+		    </div>
+		  </div>
+	</div>
+
+
+
+
+
+			<!-- Key Courses Section-->
+
+	<div class="hero-image4">
+		<br><br><br><br>
+		<div class="hero-text4">
+		  	<h1 style="font-size:50px; text-align: center;">Key Courses</h1>
+		  			<br><br>
+		  			
+					<div class="mydiv2">
+
+						x
+							<h2><li>Computer Organization & Programming</li></h2>
+							<p>Fundamental computing and programming concerts; use of systems software; problem solving; design of algorithms using a high-level, object-oriented programming language.</p>
+								
+
+							<h2><li>IT Data Structures</li></h2>
+							<p>Applied fundamental data structures and algorithms; user interface design and implementation; human-computer interaction; application programming interfaces involving data structures, graphical user interface, networking, multithreading, and event-driven model; use of integrated development environments, documentation generators, and debugging tools.</p>
+							
+
+							<h2><li>Network Technology</li></h2>
+							<p>The function and structure of networking communication protocols, TCP/IP architecture, operational characteristics and design of Local Area Networks (LANs) and Wide Area Networks (WANs), and the operation and purpose of internetworking devices will be covered in this course.</p>
+
+
+							<h2><li>Database Management</li></h2>
+							<p>Fundamental concepts and standards for database management systems, database design; database implementation, storage and performance considerations, application of database management systems.</p>
+
+
+
+							<h2><li>Project Management</li></h2>
+							<p>Practical approach to managing information technology projects. Topics will include: IT project management, the body of language related to IT project management - context, life cycles, scope, time, cost, sizing, planning, scheduling, quality, risk analysis, communications, procurement, and other current issues in information project management.</p>
+
+								
+						</ul>  
+
+
+					</div>
+
+				</div>
+		</div>
+
+		    
+		  </div>
+		</div>
+
+</body>
+</html>
